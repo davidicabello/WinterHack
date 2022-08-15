@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Koulen&family=Rubik:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6965ae;
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+}
+
+.centered {
+    text-align: center;
+}
+
+.flexer {
+    display: flex;
+}
+
+.paddings {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.paddings-small {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.margins {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.margins-small {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.main-logo-spotify {
+
+    width: 15%;
+    max-width: auto;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: #97b8e1;
+}
+
+.nav-pills ul li a {
+    color: #97b8e1;
+}
+
+.nav-pills ul li a:hover {
+    color: #554078;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #97b8e1;
+}
+
+.nav-pills .nav-link.active:hover {
+    color: #554078;
+    background-color: #97b8e1;
+}
+
+.main-header {
+    margin-top: 40px;
+}
+
+.main-hero {
+    position: relative;
+}
+
+.main-hero-description span {
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.main-hero-description span b {
+    color: #97b8e1;
+}
+
+.main-hero-spotify {
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.other-chapters h2 {
+    color: #97b8e1;
+}
+
+.card {
+    margin: 5px;
+}
+
+.row .col-md-3 {
+    justify-content: center;
+    display: flex;
+}
+
+.newsletter {
+    background-color: #FFFFFF;
+}
+
+.btn {
+    background-color: #0dcaf0;
+}
+
+.btn:hover {
+    background-color: #6965ae;
+}
+
+.fav-logo i {
+    font-size: 100px;
+    color: #97b8e1;
+}
+
+.fav-logo i:hover {
+    color: #0dcaf0;
+}
+
+.wrapper {
+    display: inline-flex;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.wrapper .icon {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #666;
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span, .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover, .wrapper .facebook:hover .tooltip, .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover, .wrapper .twitter:hover .tooltip, .wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover, .wrapper .instagram:hover .tooltip, .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+}
+
+.wrapper .github:hover, .wrapper .github:hover .tooltip, .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover, .wrapper .youtube:hover .tooltip, .wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+}
+
+
+footer {
+    background-color: #554078;
+    color: #97b8e1;
+    padding: 1rem;
+    place-items: center;
+    display: grid;
+    padding-top: 150px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: #97b8e1;
+    opacity: 1;
+}
+
+a:hover {
+    color: #0dcaf0;
+}
+
+footer p {
+    color: #f0f9ff;
+    font-weight: bolder;
+    opacity: 0.8;
+}
+
+
+/* SHAPE DIVIDER APP CUSTOM CLASS TOP*/
+
+.custom-shape-divider-bottom-1660583551 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    padding: 0%;
+}
+
+.custom-shape-divider-bottom-1660583551 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.custom-shape-divider-bottom-1660583551 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*SHAPE DIVIDER APP CUSTOM CLASS BOTTOM*/
+.custom-shape-divider-top-1660583816 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    padding: 0%;
+}
+
+.custom-shape-divider-top-1660583816 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.custom-shape-divider-top-1660583816 .shape-fill {
+    fill: #FFFFFF;
+}
