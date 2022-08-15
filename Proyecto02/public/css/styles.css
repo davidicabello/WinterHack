@@ -53,6 +53,10 @@ body {
     justify-content: center;
 }
 
+b {
+    color: #97b8e1;
+}
+
 a {
     text-decoration: none;
     color: whitesmoke;
@@ -225,7 +229,7 @@ a:hover {
 
 
 footer {
-    background-color: #554078;
+    background-color: #8a8fc6;
     color: #97b8e1;
     padding: 1rem;
     place-items: center;
