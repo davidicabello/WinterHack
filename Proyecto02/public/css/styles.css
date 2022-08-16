@@ -52,7 +52,7 @@ body {
 
 .main-logo-spotify {
 
-    width: 30%;
+    width: 9rem;
     height: auto;
 
 }
@@ -118,6 +118,11 @@ a:hover {
     margin: 5px;
 }
 
+.row .col-lg-3 {
+    justify-content: center;
+    display: flex;
+}
+
 .row .col-md-3 {
     justify-content: center;
     display: flex;
@@ -140,10 +145,15 @@ a:hover {
     color: #97b8e1;
 }
 
+.fav-logo a:link {
+    font-size: 80px;
+}
+
 .fav-logo i:hover {
     color: #0dcaf0;
 }
 
+/*CUSTOM CSS FOOTER WIDGET*/
 .wrapper {
     display: inline-flex;
     padding: 30px;
@@ -231,7 +241,7 @@ a:hover {
     color: #ffffff;
 }
 
-
+/*CUSTOM CSS FOOTER WIDGET*/
 footer {
     background-color: #8a8fc6;
     color: #97b8e1;
@@ -258,9 +268,7 @@ a:hover {
 }
 
 footer p {
-    color: #f0f9ff;
-    font-weight: bolder;
-    opacity: 0.8;
+    color: whitesmoke;
 }
 
 
