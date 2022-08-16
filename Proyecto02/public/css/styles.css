@@ -23,6 +23,10 @@ body {
     padding-bottom: 100px;
 }
 
+.padding-bot {
+    padding-bottom: 100px;
+}
+
 .paddings-small {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -48,9 +52,9 @@ body {
 
 .main-logo-spotify {
 
-    width: 15%;
-    max-width: auto;
-    justify-content: center;
+    width: 30%;
+    height: auto;
+
 }
 
 b {
