@@ -101,6 +101,15 @@ a:hover {
 
 }
 
+.width {
+    width: 100%;
+}
+
+.img-font {
+    display: flex;
+    justify-content: center;
+}
+
 .main-hero-description span b {
     color: #97b8e1;
 }
