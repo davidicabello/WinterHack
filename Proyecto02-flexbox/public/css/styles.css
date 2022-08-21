@@ -171,7 +171,7 @@ ul {
 
 .card {
     width: 200px;
-    border: 2px solid #333;
+    border: .5px solid #333;
     border-radius: 5px;
     margin: 20px;
     background-color: #fafafa;
@@ -184,7 +184,8 @@ ul {
 
 .card-button {
     background-color: #554078;
-    font-weight: bolder;
+    font-weight: 600;
+    color: whitesmoke;
     border-radius: 5px;
     margin: 5px;
 }
