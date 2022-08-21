@@ -239,6 +239,10 @@ footer {
     display: block;
 }
 
+.footer-copyright {
+    padding-bottom: 15px;
+}
+
 /* SHAPE DIVIDER APP CUSTOM CLASS TOP*/
 
 .custom-shape-divider-bottom-1660583551 {
