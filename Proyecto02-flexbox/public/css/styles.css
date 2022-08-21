@@ -56,6 +56,19 @@ p {
     max-width: 250px;
 }
 
+.max-width-1200 {
+    max-width: 1200px;
+}
+
+span {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+form span {
+    max-width: 1200px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
