@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Koulen&family=Rubik:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+body {
+    background-color: #6965ae;
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    width: 100%;
+    margin: 0 auto;
+}
+
+b {
+    color: aqua;
+}
+
+p {
+    color: #333;
+}
+
+.centered {
+    text-align: center;
+}
+
+.margins {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.margin-bot {
+    margin-bottom: 10px;
+}
+
+.paddings {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.paddings-left-right {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.paddind-top {
+    padding-top: 100px;
+}
+
+.padding-bot {
+    padding-bottom: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main_header .container div {
+    margin-bottom: 10px;
+}
+
+
+.main-logo-spotify {
+    width: 9rem;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 30px 0px 30px 0px;
+    align-items: center;
+    color: #fafafa;
+    text-align: center;
+}
+
+.container_nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+nav {
+    width: 800px;
+    margin: 0 auto;
+    flex-direction: row;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+.main_hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.container-hero-text {
+    width: 400px;
+    text-align: left;
+}
+
+.container-hero-img {
+    margin: 5px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.container-hero-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main-cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text-episodes {
+    display: flex;
+    padding: 50px;
+}
+
+.spotify-player {
+    max-width: 1200px;
+}
+
+.main_cards {
+    color: aqua;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card {
+    width: 200px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: #fafafa;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+}
+
+.card-button {
+    background-color: #554078;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.newsletter {
+    background-color: #fafafa;
+}
+
+.img-form {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+/* SHAPE DIVIDER APP CUSTOM CLASS TOP*/
+
+.custom-shape-divider-bottom-1660583551 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    padding: 0%;
+}
+
+.custom-shape-divider-bottom-1660583551 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.custom-shape-divider-bottom-1660583551 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*SHAPE DIVIDER APP CUSTOM CLASS BOTTOM*/
+.custom-shape-divider-top-1660583816 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    padding: 0%;
+}
+
+.custom-shape-divider-top-1660583816 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.custom-shape-divider-top-1660583816 .shape-fill {
+    fill: #FFFFFF;
+}
