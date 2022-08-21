@@ -1,0 +1,83 @@
+[debug] [2022-08-21T15:46:22.298Z] ----------------------------------------------------------------------
+[debug] [2022-08-21T15:46:22.300Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\David\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-21T15:46:22.301Z] CLI Version:   11.7.0
+[debug] [2022-08-21T15:46:22.301Z] Platform:      win32
+[debug] [2022-08-21T15:46:22.301Z] Node Version:  v18.2.0
+[debug] [2022-08-21T15:46:22.302Z] Time:          Sun Aug 21 2022 12:46:22 GMT-0300 (Argentina Standard Time)
+[debug] [2022-08-21T15:46:22.302Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-21T15:46:22.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-21T15:46:22.363Z] > authorizing via signed-in user (davidivan.eda@gmail.com)
+[debug] [2022-08-21T15:46:22.363Z] [iam] checking project psicologia-al-desnudo-reto-02 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-21T15:46:22.365Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/psicologia-al-desnudo-reto-02:testIamPermissions [none]
+[debug] [2022-08-21T15:46:22.366Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/psicologia-al-desnudo-reto-02:testIamPermissions x-goog-quota-user=projects/psicologia-al-desnudo-reto-02
+[debug] [2022-08-21T15:46:22.366Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/psicologia-al-desnudo-reto-02:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-21T15:46:23.356Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/psicologia-al-desnudo-reto-02:testIamPermissions 200
+[debug] [2022-08-21T15:46:23.356Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/psicologia-al-desnudo-reto-02:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-21T15:46:23.359Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/psicologia-al-desnudo-reto-02 [none]
+[debug] [2022-08-21T15:46:23.742Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/psicologia-al-desnudo-reto-02 200
+[debug] [2022-08-21T15:46:23.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/psicologia-al-desnudo-reto-02 {"projectId":"psicologia-al-desnudo-reto-02","projectNumber":"829893496236","displayName":"Psicologia al desnudo reto 02","name":"projects/psicologia-al-desnudo-reto-02","resources":{"hostingSite":"psicologia-al-desnudo-reto-02"},"state":"ACTIVE","etag":"1_3aaacfef-994a-4766-941e-10b1ddda8dd1"}
+[info] 
+[info] === Deploying to 'psicologia-al-desnudo-reto-02'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-21T15:46:23.750Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/psicologia-al-desnudo-reto-02 [none]
+[debug] [2022-08-21T15:46:24.762Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/psicologia-al-desnudo-reto-02 200
+[debug] [2022-08-21T15:46:24.762Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/psicologia-al-desnudo-reto-02 {"projectId":"psicologia-al-desnudo-reto-02","projectNumber":"829893496236","displayName":"Psicologia al desnudo reto 02","name":"projects/psicologia-al-desnudo-reto-02","resources":{"hostingSite":"psicologia-al-desnudo-reto-02"},"state":"ACTIVE","etag":"1_3aaacfef-994a-4766-941e-10b1ddda8dd1"}
+[debug] [2022-08-21T15:46:24.771Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions [none]
+[debug] [2022-08-21T15:46:24.771Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-21T15:46:26.152Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions 200
+[debug] [2022-08-21T15:46:26.153Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions {"name":"projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[psicologia-al-desnudo-reto-02]: beginning deploy... 
+[info] i  hosting[psicologia-al-desnudo-reto-02]: found 20 files in public 
+[debug] [2022-08-21T15:46:26.187Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-21T15:46:26.204Z] [hosting] hash cache [cHVibGlj] stored for 20 files
+[debug] [2022-08-21T15:46:26.204Z] [hosting][hash queue][FINAL] {"max":6,"min":1,"avg":1.45,"active":0,"complete":20,"success":20,"errored":0,"retried":0,"total":20,"elapsed":9}
+[debug] [2022-08-21T15:46:26.205Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35:populateFiles [none]
+[debug] [2022-08-21T15:46:26.205Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35:populateFiles {"files":{"/package-lock.json":"25c95e61b6bab3fa90af8289e4e0dab2aee96c052f962ea1c3a05be54be0f560","/package.json":"5fb68c8292b19e66f9044f9dfecce5f4365cfe9735a3f5507dbf0bb337c0eed3","/images/chat.svg":"37d4fbeceadd6f4751399cdf9f83f122fdaa6822b9b690a9b3126427ded2ec02","/images/instagram-brands.svg":"a03403a47e9eb20e3df1fd47c15501e66c0ad169f09e7af5b0a51cd6b3ee3f6f","/images/main-image-psicologia-al-desnudo.jfif":"1f6383fdb3b13116e77710c30f0e31368d9b796148af32f69bd8817036521b96","/images/main-logo-psicologia-al-desnudo-2.jpg":"ed36c63905399ac7b5bab0dc057d64a879c8d555c3c9c6de283d372ffc8e377d","/images/main-logo-psicologia-al-desnudo.png":"804d998f8ba04db27c4d6cb17c70e8c96f9bc86dc74ffcd812c01fd0ea78a3ee","/images/message.svg":"e7c103c80a11bb3684db09d0b7f5d9e225a1ce122f44aed023e89a3fa0c9055e","/images/message1.svg":"cbf2976c0130d2f5863f3aca8f0598427e7a7186c93f5b5771c2085b2a1a4b70","/images/problem.svg":"e80a90ed4d4dc95626c5f222167889a49f39f8475b9060d0781ba9c837e335bc","/images/Spotify_logo_with_text.svg":"90ed77f16bdda0f69aa80b70cd1be721605529cac52248fbd4336ac7047e247a","/images/undraw_Newsletter_re_wrob.svg":"3ec95dee37701cf7b279d2fcb19ec9ca1b3e736e0d8e2e9cc1501966b9eef14d","/images/waiting.svg":"dcd0355c3681d4e191c5fe1843b929f508f863b02f3aeff8564751d6f80fe8e5","/images/wavesNegative.svg":"b35a9b21d72884ab30b55e272b704007d7aa10dc3f8b73f6140cd21f75fa16f5","/images/world.svg":"2de38587f867c57630b458dee4582285b6772341e6943c4f11d641077837f8ad","/images/worldw1.svg":"dd1bcfdc38514d9fd6d7103795f2cc72f3987c6033bae767b81a30987a76ddd8","/js/script.js":"46b50c321b39e89a491b6727a01628c34245605a30beb3e7414c5e01cff90e6e","/video/main-hero-video-psicologia-al-desnudo.mp4":"afb3cd8cc93f7c2c069b12c09836535d51ac73fb7f7c2401e316984d65f2af25","/css/styles.css":"cc134754afa39849f00b6da2de6e9c6e4930789371af9cad31e543ab1cf52591","/index.html":"d7a205bbac674f55fca7bba571315af8f7bfaa388c810cc80d308d95ccbed3d3"}}
+[debug] [2022-08-21T15:46:27.371Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35:populateFiles 200
+[debug] [2022-08-21T15:46:27.371Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35:populateFiles {"uploadRequiredHashes":["cc134754afa39849f00b6da2de6e9c6e4930789371af9cad31e543ab1cf52591","d7a205bbac674f55fca7bba571315af8f7bfaa388c810cc80d308d95ccbed3d3"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files"}
+[debug] [2022-08-21T15:46:27.372Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files/cc134754afa39849f00b6da2de6e9c6e4930789371af9cad31e543ab1cf52591 [none]
+[debug] [2022-08-21T15:46:27.372Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files/cc134754afa39849f00b6da2de6e9c6e4930789371af9cad31e543ab1cf52591 [stream]
+[debug] [2022-08-21T15:46:27.376Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files/d7a205bbac674f55fca7bba571315af8f7bfaa388c810cc80d308d95ccbed3d3 [none]
+[debug] [2022-08-21T15:46:27.376Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files/d7a205bbac674f55fca7bba571315af8f7bfaa388c810cc80d308d95ccbed3d3 [stream]
+[debug] [2022-08-21T15:46:27.379Z] [hosting][populate queue][FINAL] {"max":1170,"min":1170,"avg":1170,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1177}
+[debug] [2022-08-21T15:46:27.379Z] [hosting] uploads queued: 2
+[debug] [2022-08-21T15:46:29.457Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files/d7a205bbac674f55fca7bba571315af8f7bfaa388c810cc80d308d95ccbed3d3 200
+[debug] [2022-08-21T15:46:29.457Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files/d7a205bbac674f55fca7bba571315af8f7bfaa388c810cc80d308d95ccbed3d3 [stream]
+[debug] [2022-08-21T15:46:29.596Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files/cc134754afa39849f00b6da2de6e9c6e4930789371af9cad31e543ab1cf52591 200
+[debug] [2022-08-21T15:46:29.597Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35/files/cc134754afa39849f00b6da2de6e9c6e4930789371af9cad31e543ab1cf52591 [stream]
+[debug] [2022-08-21T15:46:29.597Z] [hosting][upload queue][FINAL] {"max":2226,"min":2085,"avg":2155.5,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":2226}
+[info] +  hosting[psicologia-al-desnudo-reto-02]: file upload complete 
+[debug] [2022-08-21T15:46:29.601Z] [hosting] deploy completed after 3445ms
+[debug] [2022-08-21T15:46:29.614Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "psicologia-al-desnudo-reto-02"
+    },
+    "site": "psicologia-al-desnudo-reto-02",
+    "version": "projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35"
+  }
+]
+[info] i  hosting[psicologia-al-desnudo-reto-02]: finalizing version... 
+[debug] [2022-08-21T15:46:29.618Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35 updateMask=status%2Cconfig
+[debug] [2022-08-21T15:46:29.619Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-08-21T15:46:30.762Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35 200
+[debug] [2022-08-21T15:46:30.763Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35 {"name":"projects/829893496236/sites/psicologia-al-desnudo-reto-02/versions/8122fc3902aecf35","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-21T15:46:25.543082Z","createUser":{"email":"davidivan.eda@gmail.com"},"finalizeTime":"2022-08-21T15:46:30.427527Z","finalizeUser":{"email":"davidivan.eda@gmail.com"}}
+[debug] [2022-08-21T15:46:30.764Z] [hosting] finalized version for psicologia-al-desnudo-reto-02:[object Object]
+[info] +  hosting[psicologia-al-desnudo-reto-02]: version finalized 
+[info] i  hosting[psicologia-al-desnudo-reto-02]: releasing new version... 
+[debug] [2022-08-21T15:46:30.768Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/releases versionName=projects%2F829893496236%2Fsites%2Fpsicologia-al-desnudo-reto-02%2Fversions%2F8122fc3902aecf35
+[debug] [2022-08-21T15:46:30.768Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/829893496236/sites/psicologia-al-desnudo-reto-02/releases {"message":null}
