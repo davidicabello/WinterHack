@@ -11,11 +11,12 @@ document.querySelector('#send-button').onclick = function () {
     if (inputAge === '') {
         alert('Ingresa tu edad por favor!')
     }
-
-    return false;
+    return false
 };
 
-
+document.querySelector('#delete-button').onclick = function () {
+    return document.querySelectorAll('.delete').innerText.remove()
+};
 function dogAge(number) {
     return number * 7;
 };
