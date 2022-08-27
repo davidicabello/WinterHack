@@ -1,24 +1,17 @@
 document.querySelector('#send-button').onclick = function () {
     const inputAge = Number(document.querySelector('#user-age').value) || '';
-    const dogAgeHuman = dogAge(inputAge)
-    const halfAge = halfAgeFunc(inputAge)
-    const monthsInput = monthsFunc(inputAge)
-    const weeksInput = weeksFunc(inputAge)
-    const daysInput = daysFunc(inputAge)
-    const hoursInput = hoursFunc(inputAge)
-    const minutesInput = minutesFunc(inputAge)
-    const secondsInput = secondsFunc(inputAge)
+    document.querySelector('#dogAgeHuman').innerText = dogAge(inputAge)
+    document.querySelector('#halfAge').innerText = halfAgeFunc(inputAge)
+    document.querySelector('#months').innerText = monthsFunc(inputAge)
+    document.querySelector('#weeks').innerText = weeksFunc(inputAge)
+    document.querySelector('#days').innerText = daysFunc(inputAge)
+    document.querySelector('#hours').innerText = hoursFunc(inputAge)
+    document.querySelector('#minutes').innerText = minutesFunc(inputAge)
+    document.querySelector('#seconds').innerText = secondsFunc(inputAge)
     if (inputAge === '') {
         alert('Ingresa tu edad por favor!')
     }
-    document.querySelector('#dogAgeHuman').innerText = dogAgeHuman;
-    document.querySelector('#halfAge').innerText = halfAge;
-    document.querySelector('#months').innerText = monthsInput;
-    document.querySelector('#weeks').innerText = weeksInput;
-    document.querySelector('#days').innerText = daysInput;
-    document.querySelector('#hours').innerText = hoursInput;
-    document.querySelector('#minutes').innerText = minutesInput;
-    document.querySelector('#seconds').innerText = secondsInput;
+
     return false;
 };
 
