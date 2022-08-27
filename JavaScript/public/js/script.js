@@ -15,8 +15,10 @@ document.querySelector('#send-button').onclick = function () {
 };
 
 document.querySelector('#delete-button').onclick = function () {
-    return document.querySelectorAll('.delete').innerText.remove()
+    document.querySelectorAll('.delete').innerText.remove();
+    return false
 };
+
 function dogAge(number) {
     return number * 7;
 };
