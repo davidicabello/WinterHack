@@ -17,8 +17,8 @@ document.querySelector('#send-button').onclick = function () {
     document.querySelector('#weeks').innerText = weeksInput;
     document.querySelector('#days').innerText = daysInput;
     document.querySelector('#hours').innerText = hoursInput;
-    document.querySelector('#minutes').innerText = minutesInput
-    document.querySelector('#seconds').innerText = secondsInput
+    document.querySelector('#minutes').innerText = minutesInput;
+    document.querySelector('#seconds').innerText = secondsInput;
     return false;
 };
 
