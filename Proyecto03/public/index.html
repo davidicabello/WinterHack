@@ -14,12 +14,12 @@
 
 <body>
     <header>
-        <p><strong>HOLIS</strong></p>
+        <p><strong>Listado de compras</strong></p>
     </header>
     <section class="container" id="firstsection">
         <div class="row">
             <div class="col-12">
-                <H1 id="titulo-main">NO TENES NADA EN TU LISTADO POBREEEEEEEEEE</H1>
+                <H1 id="titulo-main">NO TENES NADA EN TU LISTADO</H1>
                 <br>
                 <div id="items"></div>
                 <button type="button" class="btn btn-primary" id="additem">Agregar</button>
@@ -49,6 +49,19 @@
             </div>
             <div class="col-12"><button type="button" class="btn btn-primary" id="add">Agregar</button></div>
             <div class="col-12"> <button type="button" class="btn btn-primary" id="back">Volver</button></div>
+        </div>
+    </section>
+    <section style="display: none;" class="container" id="empty-alert">
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Holy guacamole!</strong> Deberias completar los campos para agregar un item!.
+                    <button type="button" class="close btn btn-secondary" data-dismiss="alert" aria-label="Close"
+                        id="close-alert">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
     <!-- JavaScript Bundle with Popper -->
