@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <p><strong>HOLIS</strong></p>
+    </header>
+    <section class="container" id="firstsection">
+        <div class="row">
+            <div class="col-12">
+                <H1 id="titulo-main">NO TENES NADA EN TU LISTADO POBREEEEEEEEEE</H1>
+                <br>
+                <div id="items"></div>
+                <button type="button" class="btn btn-primary" id="additem">Agregar</button>
+                <button type="button" class="btn btn-primary" id="additem">Resetear</button>
+            </div>
+        </div>
+    </section>
+    <section class="container" style="display:none" id="menu">
+        <div class="row">
+            <div class="col-12">
+                <h1>Que deseas agregar a tu lista?
+                </h1>
+                <input placeholder="Nombre" type="text" class="form-control" id="name">
+            </div>
+        </div>
+        <div class="row" id="itemselected">
+            <div class="col-12">
+                <select class="form-select" id="icon" aria-label="Default select">
+                    <option value="0" selected>Selecciona una opcion para un icono.</option>
+                    <option class="img" value="carne.png">Carnes</option>
+                    <option class="img" value="electro.png">Electronica</option>
+                    <option class="img" value="pan.png">Panificados</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <textarea id="description" name="description" id="product-description" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col-12"><button type="button" class="btn btn-primary" id="add">Agregar</button></div>
+            <div class="col-12"> <button type="button" class="btn btn-primary" id="back">Volver</button></div>
+        </div>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
