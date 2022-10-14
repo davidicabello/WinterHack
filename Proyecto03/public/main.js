@@ -21,6 +21,8 @@ let addButton = document.querySelector('#additem').addEventListener('click', fun
 let backButton = document.querySelector('#back').addEventListener('click', function () {
   document.querySelector('#menu').style.display = 'none'
   document.querySelector('#firstsection').style.display = 'block'
+  document.querySelector('#titulo-main').style.display = 'block'
+  resetForm()
 })
 
 let addToListButton = document.querySelector('#add').addEventListener('click', function () {

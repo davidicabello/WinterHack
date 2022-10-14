@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <section class="container" id="firstsection">
         <div class="row">
             <div class="col-12">
-                <H1 id="titulo-main">NO TENES NADA EN TU LISTADO</H1>
+                <H1 class="centrado" id="titulo-main">NO TENES NADA EN TU LISTADO</H1>
                 <br>
                 <div id="items"></div>
                 <button type="button" class="btn btn-primary" id="additem">Agregar</button>
@@ -53,9 +54,9 @@
     </section>
     <section style="display: none;" class="container" id="empty-alert">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 centrado">
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>Holy guacamole!</strong> Deberias completar los campos para agregar un item!.
+                    <strong>Holy guacamole!</strong> Completa los campos!.
                     <button type="button" class="close btn btn-secondary" data-dismiss="alert" aria-label="Close"
                         id="close-alert">
                         <span aria-hidden="true">&times;</span>
