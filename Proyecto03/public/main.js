@@ -65,7 +65,7 @@ function showAlert() {
   document.querySelector('#menu').style.display = 'none'
 }
 
-function resetForm() {
+function resetForm () {
   itemName.value = '';
   itemImage.value = '0';
   itemDescription.value = '';
